@@ -1,0 +1,6 @@
+# Distribution
+build/
+dist/
+
+# Pyinstaller
+*.spec
