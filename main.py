@@ -17,16 +17,9 @@
 #Referenced provided header example to setup header.
 
 # ************************************************************ DEPENDENCIES ****************************************************** #
+
 # Refer to requirements.txt for the list of libraries used and dependencies
-
-# altgraph==0.17.4
-# packaging==25.0
-# pefile==2023.2.7
-# pyinstaller==6.16.0
-# pyinstaller-hooks-contrib==2025.8
-# pywin32-ctypes==0.2.3
-# setuptools==80.9.0
-
+import keyboard
 # ************************************************************ GLOBAL VARIABLES ************************************************** #
 
 # statement = "statement text here"
@@ -67,6 +60,8 @@ statement = "Hello World"
 #Uses input instead to wait for user to press a button then exits.
 object = hello_world(statement)
 object.greet()
-input("Press any button to exit")
 
+#Waits for a key to be pressed before exiting application.
+print("Press any button to exit...")
+keyboard.read_event()
 
