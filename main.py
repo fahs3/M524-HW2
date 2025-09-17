@@ -20,6 +20,7 @@
 
 # Refer to requirements.txt for the list of libraries used and dependencies
 import keyboard
+
 # ************************************************************ GLOBAL VARIABLES ************************************************** #
 
 # statement = "statement text here"
