@@ -6,6 +6,10 @@
 ## **README Purpose**
 The purpose of this readme is to indicate the required dependencies, how to copy the codebase, install all dependencies, and compile it, to allow future developers to contribute.
 
+## **Referenced Material**
+ChatGPT used to understand how to format a README.md using # and * for italicization, bolding, different header classes, and how to put code in a readme using `your code here`.
+Assignment Guidelines.pdf used to understand how to format the readme, v
+
 ## **Codebase Purpose**
 The purpose of this codebase is to create a simple executable program in python which prints a given statement, in this case, hello world, to the terminal and stays active there until termination by the user.
 
@@ -19,10 +23,18 @@ This work is guarded by the MIT No Attribution License, last updated on May 15, 
 - Inputted statement in main.py printed in terminal when executable is run, and waits for user
 
 ## **Dependencies & Frameworks**
-- Refer to requirements.txt for dependencies
+pyinstaller==6.0+ (below dependencies for pyinstaller)
+[altgraph==0.17.4
+packaging==25.0
+pefile==2023.2.7
+pyinstaller==6.16.0
+pyinstaller-hooks-contrib==2025.8
+pywin32-ctypes==0.2.3
+setuptools==80.9.0]
+keyboard==0.13.5
 
 ## **Installation**
-1. Install Python 3.13.7  
+1. Install Python 3.1+, pyinstaller releases support Python 3.7 - 3.12
 
 2. Install an IDE like VSCode
 
