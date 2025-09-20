@@ -65,7 +65,7 @@ statement = "Hello World"
 statement_obj = hello_world(statement)
 statement_obj.greet()
 
-#Waits for a key to be pressed before exiting application.
-print("Press any button to exit...")
-keyboard.read_event()
+# #Waits for a key to be pressed before exiting application.
+# print("Press any button to exit...")
+# keyboard.read_event()
 

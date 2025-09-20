@@ -55,7 +55,7 @@ keyboard==0.13.5
 
 ## **Compiling & Execution**
 1. Navigate to project folder in your terminal (bash)
-2. Run pyinstaller `pyinstaller main.py`
+2. Run pyinstaller `pyinstaller --onefile main.py`
     This creates a distributable folder `dist/` where the final executable is stored, a `.spec` file containing configuration for future builds, and a `build/` folder for temporary files.
 3. If you want to add an icon, use the following method:
 `pyinstaller --onefile --icon=app.ico main.py`
