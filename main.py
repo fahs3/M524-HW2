@@ -65,7 +65,7 @@ class hello_world:
         print(f"{self.statement}")
 
 #storing string hello world onto statement global variable
-statement = "Hello World"
+statement = "I would like to learn how to implement computer vision and machine learning for robotics, along with how to develop a basic complete software package for robots"
 
 #Creating a new object using the class hello world with the statement hello world inputted
 #Uses input instead to wait for user to press a button then exits.
