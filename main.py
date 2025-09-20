@@ -14,15 +14,22 @@
 # ************************************************************ REFERENCED MATERIAL *********************************************** #
 
 #ChatGPT used for instructions on how to setup the class, and definitions related to __init__, {} usage, etc.
-#as it has been some time since I have coded in python.
 #I learnt how to use pyinstaller from ChatGPT to bundle the application and its dependencies into an exe file.
 #Used ChatGPT for code review - to see if following PEP 8 coding stylization for Python, and determine differences to judge if acceptable or not.
 #Referenced provided header example to setup header.
 
 # ************************************************************ DEPENDENCIES ****************************************************** #
 
-# Refer to requirements.txt for the list of libraries used and dependencies
-import keyboard
+# pyinstaller==6.0+ (below dependencies for pyinstaller)
+
+#     [altgraph==0.17.4
+#     packaging==25.0
+#     pefile==2023.2.7
+#     pyinstaller==6.16.0
+#     pyinstaller-hooks-contrib==2025.8
+#     pywin32-ctypes==0.2.3
+#     setuptools==80.9.0
+#     keyboard==0.13.5]
 
 # ************************************************************ GLOBAL VARIABLES ************************************************** #
 
