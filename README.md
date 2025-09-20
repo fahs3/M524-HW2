@@ -24,14 +24,15 @@ This work is guarded by the MIT No Attribution License, last updated on May 15, 
 
 ## **Dependencies & Frameworks**
 pyinstaller==6.0+ (below dependencies for pyinstaller)
+
 [altgraph==0.17.4
 packaging==25.0
 pefile==2023.2.7
 pyinstaller==6.16.0
 pyinstaller-hooks-contrib==2025.8
 pywin32-ctypes==0.2.3
-setuptools==80.9.0]
-keyboard==0.13.5
+setuptools==80.9.0
+keyboard==0.13.5]
 
 ## **Installation**
 1. Install Python 3.1+, pyinstaller releases support Python 3.7 - 3.12
@@ -59,4 +60,6 @@ keyboard==0.13.5
     This creates a distributable folder `dist/` where the final executable is stored, a `.spec` file containing configuration for future builds, and a `build/` folder for temporary files.
 3. If you want to add an icon, use the following method:
 `pyinstaller --onefile --icon=app.ico main.py`
-4. Double click the `.exe` file in the dist folder to run the application.
+4. Move the launcher (RUN ME TO RUN APP).bat to the same folder as the .exe outputted in the `dist/` folder titled main.exe
+5. Double click the `launcher (RUN APP).bat` file in the dist folder to run the application.
+6. The `launcher (RUN APP).bat` runs the main.exe in a new console window and keeps it open after the output is given.
