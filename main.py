@@ -119,7 +119,7 @@ def main():
     # using them to store the lengths and widths as Python does not have a double data type.
     # Python number data types are: int, long, float, complex.
     # The variable: float is a hint
-    length1 = float(0.1)
+    length1 = float(0.3)
     width1 = float(0.6)
     length2 = float(1)
     width2 = float(0.06)
