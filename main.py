@@ -76,7 +76,7 @@ class rectangle_area_class:
         length1_bool = isinstance(self.length1, float) and self.length1 > 0
         length2_bool = isinstance(self.length2, float) and self.length2 > 0
         width1_bool = isinstance(self.width1, float) and self.width1 > 0
-        width2_bool = isinstance(self.width2, float) and self.width1 > 0
+        width2_bool = isinstance(self.width2, float) and self.width2 > 0
 
         variable_bool_list = [length1_bool, length2_bool, width1_bool, width2_bool]
         return variable_bool_list
@@ -90,7 +90,7 @@ class rectangle_area_class:
     def area_calculator(self) -> list[float, float]:
 
          area_rect_list = [self.width1*self.length1, self.width2*self.length2]
-         self.area_rect_list = area_rect_list
+         self.area_rect_list = area_rect_list #storing the list to the object.
          return area_rect_list
     
     # Method: eval_area_similarity(self)
@@ -98,9 +98,11 @@ class rectangle_area_class:
     # Returns: area_similarity_bool (bool): A boolean variables which evaluates to TRUE if both areas are within the relative tolerance, returns FALSE if not.
     # Logic: method inside the class which evaluates the areas in the list of the object area_rect_list. Uses math.isclose to check if
     # both areas are close to each other within the relative tolerance indicated. Returns area_similarity_bool as TRUE/ FALSE.
-    
+    # Using the sys library in Python, can get the machine epsilon, the upper bound on approximation error in floating point number systems.
+    # Set this value to the relative tolerance - so the values must be within the approximation error range. Relative error used as it determines the tolerance
+    # wrt to the area size.
     def eval_area_similarity(self) -> bool:
-         area_similarity_bool = math.isclose(self.area_rect_list[0], self.area_rect_list[1], rel_tol=1e-09)
+         area_similarity_bool = math.isclose(self.area_rect_list[0], self.area_rect_list[1], rel_tol=sys.float_info.epsilon)
          return area_similarity_bool
     
 # ************************************************************ MAIN FUNCTION ************************************************** #
@@ -116,10 +118,11 @@ def main():
     # Creating float (python float is implemented as a C double) variables and 
     # using them to store the lengths and widths as Python does not have a double data type.
     # Python number data types are: int, long, float, complex.
-    length1: float = float(0.1)
-    width1: float = float(0.6)
-    length2: float = float(1)
-    width2: float = float(0.06)
+    # The variable: float is a hint
+    length1 = float(0.1)
+    width1 = float(0.6)
+    length2 = float(1)
+    width2 = float(0.06)
 
     # Creating a new object using the class rectangle_area_class with the variables inputted.
     variable_obj = rectangle_area_class(length1, length2, width1, width2)
