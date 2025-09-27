@@ -4,3 +4,6 @@ dist/
 
 # Pyinstaller
 *.spec
+
+# Test files
+test.py
