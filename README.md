@@ -41,8 +41,8 @@ The math and sys libraries are included in Python, and so they are not considere
 2. Install an IDE like VSCode
 
 3. Clone the repository via bash
-    git clone https://github.com/fsaeed2/M524_HW2.git  
-    cd M524_HW2  
+    git clone https://github.com/fahs3/M524-HW2.git 
+    cd M524-HW2  
 
 4. Create and activate virtual environment, installing all dependencies:
 
